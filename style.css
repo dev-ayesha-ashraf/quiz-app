@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url("./waves.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container {
+    box-shadow: 1px 2px 3px 4px #f7f7f780;
+    border: none;
+    margin: auto;
+    width: 70%;
+    margin-top: 3%;
+    height: 70%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 750;
+}
+
+.line {
+    margin-top: 10px;
+    height: 2px;
+    width: 97%;
+    background-color: rgba(0, 0, 128, 0.751);
+}
+
+.btn {
+    display: block;
+    width: 97%;
+    margin-top: 12px;
+    height: 45px;
+    background-color: rgba(135, 207, 235, 0.171);
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+.btn:hover:not([disabled]) {
+    border: 2px solid #fff;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    margin-top: 25px;
+    background-color: rgba(0, 0, 128, 0.751);
+    color: #fff;
+    border: none;
+    width: 25%;
+    height: 42px;
+    margin-left: 35%;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#next-btn:hover {
+    cursor: pointer;
+    background-color: rgba(3, 3, 48, 0.737);
+    transition: 0.3s;
+}
+
+.incorrect {
+    background-color: #ff9393;
+}
+
+.correct {
+    background-color: #9aeabc;
+}
+
+@media(max-width:420px) {
+    h1 {
+        font-size: 20px !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container {
+        margin-top: 8%;
+    }
+
+    #next-btn {
+        width: 65% !important;
+        margin-left: 17%;
+    }
+}
